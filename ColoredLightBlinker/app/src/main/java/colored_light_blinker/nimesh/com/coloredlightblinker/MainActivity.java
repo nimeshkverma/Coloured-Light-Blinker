@@ -65,17 +65,31 @@ public class MainActivity extends AppCompatActivity {
                         ConstraintLayout bgElement = (ConstraintLayout) findViewById(R.id.activity_main_id);
                         int color = ((ColorDrawable) bgElement.getBackground()).getColor();
                         long time = System.currentTimeMillis();
-                        long mod = time % 10000;
-                        if (mod <= 2000) {
-                            bgElement.setBackgroundColor(Color.MAGENTA);
-                        } else if (mod > 2000 && mod <= 4000) {
-                            bgElement.setBackgroundColor(Color.RED);
-                        } else if (mod > 4000 && mod <= 6000) {
-                            bgElement.setBackgroundColor(Color.BLUE);
-                        } else if (mod > 6000 && mod <= 8000) {
-                            bgElement.setBackgroundColor(Color.CYAN);
+                        long mod = time % 12000;
+                        if (mod <= 1000) {
+                            bgElement.setBackgroundColor(Color.rgb(148, 0, 211));
+                        } else if (mod > 1000 && mod <= 2000) {
+                            bgElement.setBackgroundColor(Color.rgb(75, 0, 130));
+                        } else if (mod > 2000 && mod <= 3000) {
+                            bgElement.setBackgroundColor(Color.rgb(0, 0, 255));
+                        } else if (mod > 3000 && mod <= 4000) {
+                            bgElement.setBackgroundColor(Color.rgb(0, 255, 0));
+                        } else if (mod > 4000 && mod <= 5000) {
+                            bgElement.setBackgroundColor(Color.rgb(255, 255, 0));
+                        }else if (mod > 5000 && mod <= 6000) {
+                            bgElement.setBackgroundColor(Color.rgb(255, 127, 0));
+                        }else if (mod > 6000 && mod <= 7000) {
+                            bgElement.setBackgroundColor(Color.rgb(255, 0 , 0));
+                        }else if (mod > 7000 && mod <= 8000) {
+                            bgElement.setBackgroundColor(Color.rgb(255, 127, 0));
+                        }else if (mod > 8000 && mod <= 9000) {
+                            bgElement.setBackgroundColor(Color.rgb(255, 255, 0));
+                        }else if (mod > 9000 && mod <= 10000) {
+                            bgElement.setBackgroundColor(Color.rgb(0, 255, 0));
+                        }else if (mod > 10000 && mod <= 11000) {
+                            bgElement.setBackgroundColor(Color.rgb(0, 0, 255));
                         } else {
-                            bgElement.setBackgroundColor(Color.YELLOW);
+                            bgElement.setBackgroundColor(Color.rgb(75, 0, 130));
                         }
                     }
 
